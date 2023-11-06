@@ -627,16 +627,14 @@ body {
 /* Lower skill group section */
 @media (min-width: 319px) and (max-width: 920px) {
   .skill-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin-top: 0px;
-    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
-
+  
   .skill-list div {
-    height: 150px;
-    width: 140px;
-    margin-bottom: 20px;
+    width: 150px;
   }
 }
