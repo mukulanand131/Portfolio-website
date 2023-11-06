@@ -13,18 +13,15 @@
     />
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-
     <!-- To get navbar collapse icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <!-- For social Media icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -32,15 +29,10 @@
     />
     <!-- For typing Animation -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-
     <!-- Linking Bootstrap for navbar -->
-    
-    
   </head>
   <body>
     <!-- For Nav Bar -->
-    
     <header class="header">
       <a href="#" class="logo">Mukul Anand</a>
       <nav class="navbar" id="myTopnav">
@@ -49,20 +41,17 @@
         <a href="./skills.html" style="--i: 3">Skills</a>
         <a href="./project.html" style="--i: 4">Projects</a>
         <a href="./contact.html" style="--i: 5">Contact</a>
-
         <!-- Icon to appear when navbar collapse -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </nav>
     </header>
-
     <!-- To hide when there is large screen -->
     <style>
       .navbar .icon {
         display: none;
       }
-
       @media screen and (max-width: 920px) {
         .navbar a {
           display: none;
@@ -75,12 +64,10 @@
           margin-top: 12px;
           float: left;
           display: block;
-          
         }
         .header {
           background-color: #080808;
         }
-
         .logo {
           position:fixed;
           top: 0;
@@ -89,21 +76,18 @@
           margin-top: 12px;
         }
       }
-
       @media screen and (max-width: 920px) {
         .navbar.responsive {
           position: fixed;
           right: 0;
           top: 0;
           /* opacity: 0.5; */
-          
           background-color: #080808;
         }
         .navbar.responsive .icon {
           position: fixed;
           /* right: -30px; */
           top: 0;
-
         }
         .navbar.responsive a:not(:last-child) {
           /* background-color: black; */
@@ -121,7 +105,6 @@
         }
       }
     </style>
-
     <!-- Script for navbar collapse -->
     <script>
       function myFunction() {
@@ -133,7 +116,6 @@
         }
       }
     </script>
-
     <!-- For Home section -->
     <section class="home" id="home">
       <div class="home-content">
@@ -170,9 +152,7 @@
       </div>
       </div>
       <span class="home-imgHover"></span>
-      
     </section>
-
     <!-- For about Section -->
     <section class="about" id="about">
       <div class="about-img">
@@ -197,11 +177,9 @@
           you and explore how I can contribute to your team or project. Let's
           discuss potential opportunities!
         </p>
-
         <a href="./about.html" class="btn-box">More About Me</a>
       </div>
     </section>
-
     <!-- For education Section -->
     <section class="education" id="education">
       <div class="container">
@@ -239,7 +217,6 @@
         </div>
       </div>
     </section>
-
     <h1 class="skill-land-head">My <span>Skills</span></h1>
     <!-- For Skills -->
     <section class="skills-land" id="skills-land">
@@ -304,7 +281,6 @@
             </div>
           </div>
         </div>
-
         <!-- Professional Skills -->
         <div class="container2-land">
           <h1 class="heading2-land">Professional Skills</h1>
@@ -383,7 +359,6 @@
             </div>
           </div>
         </div>
-
         <div class="container3-land">
           <h1 class="heading1-land">Technical Skills</h1>
           <div class="technical-bars-land">
@@ -446,7 +421,6 @@
         </div>
       </div>
     </section>
-
     <section>
       <div id="portfolio" itemid="project">
         <div class="main-text" id="project">
@@ -464,11 +438,9 @@
                   accomplished by using some algorithms of ML and some
                   standardization techniques.
                 </p>
-
                 <p class="tools">
                   TOOLS - Machine Learning Algorithms, Spyder.
                 </p>
-
                 <a href="#"
                   ><i class="bx bx-link-external" style="color: aliceblue"></i
                 ></a>
@@ -483,11 +455,9 @@
                   This was accomplished by using some algorithms of ML, DL and
                   some standardization techniques.
                 </p>
-
                 <p class="tools">
                   TOOLS - Machine Learning Algorithms, Google Collab.
                 </p>
-
                 <a href="#"
                   ><i class="bx bx-link-external" style="color: aliceblue"></i
                 ></a>
@@ -502,11 +472,9 @@
                   This was accomplished by using some algorithms of ML, DL and
                   some standardization techniques.
                 </p>
-
                 <p class="tools">
                   TOOLS - Machine Learning Algorithms, Google Collab.
                 </p>
-
                 <a href="#"
                   ><i class="bx bx-link-external" style="color: aliceblue"></i
                 ></a>
@@ -516,7 +484,6 @@
         </div>
       </div>
     </section>
-
     <!-- For Contact section -->
     <section class="contact" id="contact">
       <div class="contact-text">
@@ -550,12 +517,10 @@
           ></a>
         </div>
       </div>
-
       <div class="contact-form">
         <form action="">
           <input type="" placeholder="Enter Your Name" required />
           <input type="email" placeholder="Enter Your Email" required />
-
           <input type="" placeholder="Enter Your Subject" required />
           <textarea
             name=""
@@ -569,7 +534,6 @@
         </form>
       </div>
     </section>
-
     <div class="last-text">
       <p>
         Developed with love
@@ -577,9 +541,7 @@
         <span class="name">Mukul Anand</span>
       </p>
     </div>
-
     <a href="#home" class="top"><i class="bx bx-arrow-to-top"></i></a>
-
     <!-- Setup and start animation! -->
     <script>
       var typed = new Typed("#text", {
