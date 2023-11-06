@@ -550,6 +550,21 @@ body {
   transform: translateY(-10px);
 }
 
+/* Top button */
+.top {
+  position: fixed;
+  bottom: 2.1rem;
+  right: 2.1rem;
+}
+
+.top i {
+  color: #000000;
+  background: #0ef;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+
 /* Skills */
 @media (min-width: 319px) and (max-width: 920px) {
   section {
@@ -585,21 +600,6 @@ body {
     width: 70vw;
     margin-left: 0px;
   }
-}
-
-/* Top button */
-.top {
-  position: fixed;
-  bottom: 2.1rem;
-  right: 2.1rem;
-}
-
-.top i {
-  color: #000000;
-  background: #0ef;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 0.5rem;
 }
 
 /* Bar and radial Skills Section */
