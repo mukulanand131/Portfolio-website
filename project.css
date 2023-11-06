@@ -278,6 +278,7 @@ body {
 
   .row {
     width: 70vw;
+    height: 400px;
     margin-bottom: 6vh;
     margin-left: 0px;
   }
