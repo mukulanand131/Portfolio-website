@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="contact.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- For social Media icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- For typing Animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <!-- For Nav Bar -->
+    <header class="header">
+      <a href="#" class="logo">Mukul Anand</a>
+      <nav class="navbar" id="myTopnav">
+        <a href="./index.html" style="--i: 1">Home</a>
+        <a href="./about.html" style="--i: 2">About</a>
+        <a href="./skills.html" style="--i: 3">Skills</a>
+        <a href="./project.html" style="--i: 4">Projects</a>
+        <a href="./contact.html" style="--i: 5">Contact</a>
+
+        <!-- Icon to appear when navbar collapse -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <!-- To hide when there is large screen -->
+    <style>
+      .navbar .icon {
+        display: none;
+      }
+
+      @media screen and (max-width: 920px) {
+        .navbar a {
+          display: none;
+        }
+        .navbar a.icon {
+          position: fixed;
+          top: 0;
+          right: 0;
+          margin-right: 12px;
+          margin-top: 12px;
+          float: left;
+          display: block;
+        }
+        .header {
+          background-color: #080808;
+        }
+
+        .logo {
+          position: fixed;
+          top: 0;
+          left: 0;
+          margin-left: 12px;
+          margin-top: 12px;
+        }
+      }
+
+      @media screen and (max-width: 920px) {
+        .navbar.responsive {
+          position: fixed;
+          right: 0;
+          top: 0;
+          /* opacity: 0.5; */
+
+          background-color: #080808;
+        }
+        .navbar.responsive .icon {
+          position: fixed;
+          /* right: -30px; */
+          top: 0;
+        }
+        .navbar.responsive a:not(:last-child) {
+          /* background-color: black; */
+          position: relative;
+          /* top: 0; */
+          /* right: 0; */
+          margin-left: 20px;
+          margin-bottom: 10px;
+          padding-right: 20px;
+          /* margin-right: 20px; */
+          float: none;
+          display: block;
+          /* flex-direction: column; */
+          text-align: left;
+        }
+      }
+    </style>
+
+    <!-- Script for navbar collapse -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+
+    <!-- For Contact section -->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's work Together</h4>
+        <p>
+          Let's work together to bring your ideas to life! I'm excited to hear
+          from you and explore how we can collaborate to achieve your goals.
+          Whether you have a project in mind, a question to ask, or just want to
+          connect, feel free to reach out. I'm here to listen, share ideas, and
+          find the best solutions to meet your needs. You can contact me via the
+          provided email address or through the contact form below. I look
+          forward to the opportunity to work together and make your vision a
+          reality.
+        </p>
+        <div class="contact-list">
+          <li>
+            <i class="bx bxs-send" style="color: #00eeff"></i
+            >mukulanand131@gmail.com
+          </li>
+          <li><i class="bx bx-phone" style="color: #00eeff"></i>8271862583</li>
+        </div>
+        <div class="contact-icons">
+          <a href=""><i class="bx bxl-facebook-circle"></i></a>
+          <a href=""><i class="bx bx-x"></i></a>
+          <a href="https://instagram.com/mukul_anand___?igshid=OGQ5ZDc2ODk2ZA=="
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/mukul-anand-131-/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+
+        <!-- Download CV button -->
+        <div class="btn-con">
+          <a
+            href="./Resumes/Web dev Resume.pdf"
+            class="main-btn"
+            target="_blank"
+          >
+            <span class="btn-box"
+              >Download CV <i class="fas fa-download"></i
+            ></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="">
+          <input type="" placeholder="Enter Your Name" required />
+          <input type="email" placeholder="Enter Your Email" required />
+
+          <input type="" placeholder="Enter Your Subject" required />
+          <textarea
+            name=""
+            id=""
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+          <input type="button" value="Submit" class="send" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Top button -->
+    <a href="#contact" class="top"><i class="bx bx-arrow-to-top"></i></a>
+  </body>
+</html>
