@@ -533,6 +533,10 @@ body {
   height: 80px;
 }
 
+#skills > div > div:nth-child(3) > div:nth-child(3) {
+  height: 180px;
+}
+
 #skills > div > div:nth-child(4) > div:nth-child(3) > h2 {
   font-size: 14px;
 }
