@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mukul Anand - Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="project.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- For social Media icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- For typing Animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <!-- For Nav Bar -->
+    <header class="header">
+      <a href="#" class="logo">Mukul Anand</a>
+      <nav class="navbar" id="myTopnav">
+        <a class="nav-btn" href="./index.html" style="--i: 1">Home</a>
+        <a class="nav-btn" href="./about.html" style="--i: 2">About</a>
+        <a class="nav-btn" href="./skills.html" style="--i: 3">Skills</a>
+        <a class="nav-btn active" href="./project.html" style="--i: 4">Projects</a>
+        <a class="nav-btn" href="./contact.html" style="--i: 5">Contact</a>
+
+        <!-- Icon to appear when navbar collapse -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <!-- To hide when there is large screen -->
+    <style>
+      /* To mark the active page with this color */
+      .active {
+        color: rgb(255, 0, 255) !important;
+      }
+
+      .navbar .icon {
+        display: none;
+      }
+
+      @media screen and (max-width: 920px) {
+        .navbar a {
+          display: none;
+        }
+        .navbar a.icon {
+          position: fixed;
+          top: 0;
+          right: 0;
+          margin-right: 12px;
+          margin-top: 12px;
+          float: left;
+          display: block;
+        }
+        .header {
+          background-color: #080808;
+        }
+
+        .logo {
+          position: fixed;
+          top: 0;
+          left: 0;
+          margin-left: 12px;
+          margin-top: 12px;
+        }
+      }
+
+      @media screen and (max-width: 920px) {
+        .navbar.responsive {
+          position: fixed;
+          right: 0;
+          top: 0;
+          /* opacity: 0.5; */
+
+          background-color: #080808;
+        }
+        .navbar.responsive .icon {
+          position: fixed;
+          /* right: -30px; */
+          top: 0;
+        }
+        .navbar.responsive a:not(:last-child) {
+          /* background-color: black; */
+          position: relative;
+          /* top: 0; */
+          /* right: 0; */
+          margin-left: 20px;
+          margin-bottom: 10px;
+          padding-right: 20px;
+          /* margin-right: 20px; */
+          float: none;
+          display: block;
+          /* flex-direction: column; */
+          text-align: left;
+        }
+      }
+    </style>
+
+    <!-- Script for navbar collapse -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("myTopnav");
+      var btns = header.getElementsByClassName("nav-btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+    <!-- Projects Section -->
+    <div class="main-title">
+      <h2>
+        Projects <span></span
+        ><span class="bg-text"
+          >My <br />
+          Works</span
+        >
+      </h2>
+    </div>
+
+    <section>
+      <div id="portfolio" itemid="project">
+        <div class="main-text" id="project">
+          <div class="portfolio-content">
+            <div class="row">
+              <img src="./images/Streamlit web page Heart.png" alt="" />
+              <div class="layer">
+                <h5>Multiple Malady Prediction System Using ML</h5>
+                <p>
+                  This Project was a simple prototype of multiple disease
+                  detection which includes
+                  <span>"Heart Disease Prediction"</span> and
+                  <span>"Diabetes Disease Prediction"</span>. This was
+                  accomplished by using some algorithms of ML and some
+                  standardization techniques.
+                </p>
+
+                <p class="tools">
+                  TOOLS - Machine Learning Algorithms, Spyder.
+                </p>
+
+                <div class="link-button">
+                  <a href="https://github.com/mukulanand131/ML/tree/main/ML%20Project"
+                  ><i class='bx bx-code' style="color: aliceblue"></i
+                ></a>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <img src="./images/time series.jpg" alt="" />
+              <div class="layer">
+                <h5>Deep Learning Insights Using Time Series Data</h5>
+                <p>
+                  This Project on Time Series Data of 25 years taken from NASA.
+                  This was accomplished by using some algorithms of ML, DL and
+                  some standardization techniques.
+                </p>
+
+                <p class="tools">
+                  TOOLS - Machine Learning Algorithms, Google Collab.
+                </p>
+
+                <div class="link-button">
+                  <a href="https://github.com/mukulanand131/Deep-Learning"
+                  ><i class='bx bx-code' style="color: aliceblue"></i
+                ></a>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <img src="./images/Dice game.jpg" alt="" />
+              <div class="layer">
+                <h5>Dice Game</h5>
+                <p>
+                  The dice game website project served as a platform for learning, growth, 
+                  and practical application of web development skills. It reinforced the 
+                  importance of planning, coding best practices, and responsive design while 
+                  providing valuable experience in dynamic and interactive web development and 
+                  fueled my enthusiasm for future projects.
+                </p>
+
+                <p class="tools">
+                  TOOLS - HTML, CSS, javascript.
+                </p>
+
+                <div class="link-button">
+                  <a href="https://github.com/mukulanand131/Dice-Game"
+                  ><i class='bx bx-code' style="color: aliceblue"></i
+                ></a>
+                <a href="https://mukulanand131.github.io/Dice-Game/"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-content">
+            <div class="row">
+              <img src="./images/portfolio website front page.jpg" alt="" />
+              <div class="layer">
+                <h5>Portfolio Website</h5>
+                <p>
+                  In embarking on the journey to create my portfolio website, 
+                  I underwent a rich and enlightening learning experience. 
+                  This project not only honed my technical skills but also 
+                  provided invaluable insights into the realm of web development. 
+                  I discovered the significance 
+                  of responsive design, ensuring a seamless user experience across 
+                  various devices.
+                </p>
+
+                <p class="tools">
+                  TOOLS - HTML, CSS, javascript.
+                </p>
+
+                <div class="link-button">
+                  <a href="https://github.com/mukulanand131/Portfolio-website"
+                  ><i class='bx bx-code' style="color: aliceblue"></i
+                ></a>
+                <a href="https://mukulanand131.github.io/Portfolio-website/"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <img src="./images/Drum kit front page.jpg" alt="" />
+              <div class="layer">
+                <h5>Drum Kit</h5>
+                <p>
+                  The drum kit website project deepened my understanding of HTML, CSS, and JavaScript 
+                  integration, enabling me to seamlessly blend structure, style, and functionality. 
+                  Emphasizing event-driven programming and UX design, the project illuminated the power 
+                  of JavaScript in crafting immersive web applications and highlighted the importance of 
+                  thoughtful design decisions for user experience.
+                </p>
+
+                <p class="tools">
+                  TOOLS - HTML, CSS, javascript.
+                </p>
+
+                <div class="link-button">
+                  <a href="https://github.com/mukulanand131/Drum-Kit"
+                  ><i class='bx bx-code' style="color: aliceblue"></i
+                ></a>
+                <a href="https://mukulanand131.github.io/Drum-Kit/"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <img src="./images/Simon game front page.jpg" alt="" />
+              <div class="layer">
+                <h5>Simon Game</h5>
+                <p>
+                  In completing the Simon Game website project, I gained valuable insights into web development, 
+                  mastering both HTML, CSS, and JavaScript. Through meticulous coding and problem-solving, I 
+                  successfully implemented the game's functionality, solidifying my skills in building interactive 
+                  and engaging web applications.
+                </p>
+
+                <p class="tools">
+                  TOOLS - HTML, CSS, javascript.
+                </p>
+
+                <div class="link-button">
+                  <a href="https://github.com/mukulanand131/Simon-Game"
+                  ><i class='bx bx-code' style="color: aliceblue"></i
+                ></a>
+                <a href="https://mukulanand131.github.io/Simon-Game/"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top button -->
+    <a href="#project" class="top"><i class="bx bx-arrow-to-top"></i></a>
+  </body>
+</html>
